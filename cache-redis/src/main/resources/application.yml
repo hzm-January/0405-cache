@@ -1,0 +1,21 @@
+server:
+  port: 8080
+logging:
+  level:
+    houzm.accumulation.cache: debug
+
+#redis config
+spring:
+  redis:
+#    host: 192.168.1.111
+#    host: 192.168.202.111
+    host: 47.101.152.55
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1s
+        max-idle: 8
+        min-idle: 0
+    timeout: 1s
